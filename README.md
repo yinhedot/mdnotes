@@ -214,6 +214,11 @@ Library.</pre></b-list-group-item>
 
 联系我们:  yinhe@88.com
 
+## 部分功能列表
+
+- 支持emoji表情: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+- 支持Mathjax
+
 ## MDNotes使用帮助
 
 - 默认文件目录为用户目录,可以配置修改该目录. 如果提供的目录路径错误或者没有权限,会恢复到该默认目录
