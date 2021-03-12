@@ -1,44 +1,5 @@
-## About MDNotes
-Browse and manage Markdown files in the browser.
-
-Version: 21.03.05
-
-Contact us:  yinhe@88.com
-
-## Help On MDNotes
-
-- The default file directory is the user's home directory, which can be configured to other directory. If the provided directory path is wrong or has no user permission, it will - be restored to the default directory
-- The default browser access port is 8686. After modifying the port, the MDNotes program will be restared automatically
-- Supported image format for browsing: png, jpg, jpeg,bmp,webp
-- The default picture display max-width is 500px, you can modify the corresponding statement in the file `static/mdnotes.js` to Modify image display width
-- Please use `\\(formula\\)` to indicate Mathjax in-line formulas, $ is not recommended. For more infomation, please refer to  <http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters>
-- You can use the MSI installation package to install MDNotes. The MSI installation package is made based on the files in the zip file.
-- Credits: MDNotes is built on numerous open source software.
-
-## Credits: MDNotes is built on numerous open source software.
-
-- axios
-- Babel
-- Bootstrap
-- BootstrapVue
-- Flask
-- Jinja
-- jQuery
-- MathJax
-- Popper
-- PortalVue
-- Prism
-- Python-Markdown
-- pyjson5
-- PySimpleGUIWx
-- Python
-- Vue.js
-- Waitress
-- WxPython
-- zico
-- zoom.js
-
-
+- [English Doc](https://github.com/yinhedot/MDNotes/blob/main/README_EN.md)
+- [中文文档](https://github.com/yinhedot/MDNotes/blob/main/README.md)
 
 ## 关于MDNotes
 在浏览器中浏览和管理 Markdown 文件
