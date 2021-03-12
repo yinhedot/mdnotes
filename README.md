@@ -220,6 +220,7 @@ Library.</pre></b-list-group-item>
 - 支持Mathjax
 - 支持Mermaid, 使用如下语法:
 
+<code>
 ```mermaid
 graph TD
     A[Hard] -->|Text| B(Round)
@@ -227,6 +228,7 @@ graph TD
     C -->|One| D[Result 1]
     C -->|Two| E[Result 2]
 ```
+</code>
 
 ## MDNotes使用帮助
 
