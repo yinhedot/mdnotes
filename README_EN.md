@@ -6,6 +6,9 @@ Supported OS: windows 64-bit system
 
 ## Function List
 
+- portable with no install needed
+- Directly opening files or folders for editing in the browser supported
+- Full-text search of Markdown all files supported
 - emoji supported: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
 - Mermaid supported
 - Mathjax supported
