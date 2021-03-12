@@ -1,29 +1,130 @@
 - [English Doc](https://github.com/yinhedot/MDNotes/blob/main/README_EN.md)
 - [中文文档](https://github.com/yinhedot/MDNotes/blob/main/README.md)
 
-## 关于MDNotes
-在浏览器中浏览和管理 Markdown 文件
+## 关于MDNotes: 在浏览器中浏览和管理 Markdown 文件
 
-版本: 21.03.05
+支持的操作系统: windows 64 位系统
 
-联系我们:  yinhe@88.com
-
-## 部分功能列表
+## 功能列表
 
 - 支持emoji表情: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+- 支持Mermaid
 - 支持Mathjax
-- 支持Mermaid, 使用如下语法:
+- 支持嵌套的任务列表
+- 支持Prism语法高亮
+- 支持图片缩放
+- 支持Markdown文件内容更新(包括该文件同目录的图片更新)后,实时重新渲染浏览器内网页
 
-![](mermaid.png)
+## 示例
 
-## MDNotes使用帮助
+### 1.Mermaid
+Markdown代码,注意使用emoji表情时需要用双引号:
 
-- 默认文件目录为用户目录,可以配置修改该目录. 如果提供的目录路径错误或者没有权限,会恢复到该默认目录
-- 默认浏览器访问端口为8686. 修改端口后会重新打开MDNotes程序
-- 支持浏览的图片格式:png, jpg, jpeg,bmp,webp
-- 默认图片显示的最大宽度为500px,可以修改文件 `static\mdnotes.js` 中相应的语句修改图片显示宽度
-- Mathjax的行内公式请使用 `\\(公式\\)`, 不建议使用 $.更多信息可参考 <http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters>
-- 可以使用 MSI 安装包安装 MDNotes. MSI安装包基于zip免安装包中的文件制作.
+```mermaid
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[":oncoming_police_car:Car"]
+```
+
+显示内容:
+
+![](20210312mermaid1.png)
+
+Markdown代码:
+
+```mermaid
+erDiagram
+          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+          CUSTOMER ||--o{ ORDER : places
+          CUSTOMER ||--o{ INVOICE : "liable for"
+          DELIVERY-ADDRESS ||--o{ ORDER : receives
+          INVOICE ||--|{ ORDER : covers
+          ORDER ||--|{ ORDER-ITEM : includes
+          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+```
+
+显示内容:
+
+![](20210312mermaid2.png)
+
+
+Markdown代码:
+
+```mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+```
+
+显示内容:
+
+![](20210312mermaid3.png)
+
+更多示例: <https://mermaid-js.github.io/mermaid-live-editor/>
+
+### 2.Mathjax
+Mathjax的行内公式请使用 `\\(公式\\)`, 不建议使用 $.更多信息可参考 <http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters>
+
+代码:
+
+```markdown
+When \\(a \ne1 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are:
+
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+```
+
+显示:
+
+![](20210312mathjax1.png)
+
+### 3.嵌套的任务列表
+代码:
+
+```markdown
+- [x]  task1
+- [ ]  task2
+    - [x] task2.1
+    - [ ] task2.2
+    - [ ] task2.3
+        - [x] task2.3.1
+        - [ ] task2.3.2 
+```
+
+显示:
+
+![](20210312taskList.png)
+
+### 4.Prism语法高亮
+代码:
+
+```python
+import math
+# Assign values to x and n
+x = 4
+n = 3
+
+# Method 1
+power = x ** n
+print("%d to the power %d is %d" % (x,n,power))
+
+# Method 2
+power = pow(x,n)
+print("%d to the power %d is %d" % (x,n,power))
+
+# Method 3
+power = math.pow(2,6.5)
+print("%d to the power %d is %5.2f" % (x,n,power))
+```
+
+显示:
+
+![](20210312prism.png)
 
 ## 致谢: MDNotes 基于众多的开源软件构建.
 
