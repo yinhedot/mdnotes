@@ -218,6 +218,15 @@ Library.</pre></b-list-group-item>
 
 - 支持emoji表情: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
 - 支持Mathjax
+- 支持Mermaid, 使用如下语法:
+
+```mermaid
+graph TD
+    A[Hard] -->|Text| B(Round)
+    B --> C{Decision}
+    C -->|One| D[Result 1]
+    C -->|Two| E[Result 2]
+```
 
 ## MDNotes使用帮助
 
