@@ -38,6 +38,56 @@ Contact us:  yinhe@88.com
 - zico
 - zoom.js
 
+
+
+## 关于MDNotes
+在浏览器中浏览和管理 Markdown 文件
+
+版本: 21.03.05
+
+联系我们:  yinhe@88.com
+
+## 部分功能列表
+
+- 支持emoji表情: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+- 支持Mathjax
+- 支持Mermaid, 使用如下语法:
+
+![](mermaid.png)
+
+## MDNotes使用帮助
+
+- 默认文件目录为用户目录,可以配置修改该目录. 如果提供的目录路径错误或者没有权限,会恢复到该默认目录
+- 默认浏览器访问端口为8686. 修改端口后会重新打开MDNotes程序
+- 支持浏览的图片格式:png, jpg, jpeg,bmp,webp
+- 默认图片显示的最大宽度为500px,可以修改文件 `static\mdnotes.js` 中相应的语句修改图片显示宽度
+- Mathjax的行内公式请使用 `\\(公式\\)`, 不建议使用 $.更多信息可参考 <http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters>
+- 可以使用 MSI 安装包安装 MDNotes. MSI安装包基于zip免安装包中的文件制作.
+
+## 致谢: MDNotes 基于众多的开源软件构建.
+
+- axios
+- Babel
+- Bootstrap
+- BootstrapVue
+- Flask
+- Jinja
+- jQuery
+- MathJax
+- Popper
+- PortalVue
+- Prism
+- Python-Markdown
+- pyjson5
+- PySimpleGUIWx
+- Python
+- Vue.js
+- Waitress
+- WxPython
+- zico
+- zoom.js
+
+
 ## MDNotes Software License Terms:&emsp;LGPL-3.0 License
 
 <pre style="white-space: pre-wrap;word-wrap: break-word;">  GNU LESSER GENERAL PUBLIC LICENSE
@@ -206,65 +256,3 @@ whether future versions of the GNU Lesser General Public License shall
 apply, that proxy's public statement of acceptance of any version is
 permanent authorization for you to choose that version for the
 Library.</pre></b-list-group-item>
-
-## 关于MDNotes
-在浏览器中浏览和管理 Markdown 文件
-
-版本: 21.03.05
-
-联系我们:  yinhe@88.com
-
-## 部分功能列表
-
-- 支持emoji表情: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
-- 支持Mathjax
-- 支持Mermaid, 使用如下语法:
-
-<code>
-```mermaid
-  
-graph TD
-  
-  A[Hard] -->|Text| B(Round)
-  
-  B --> C{Decision}
-  
-  C -->|One| D[Result 1]
-  
-  C -->|Two| E[Result 2]
-
-```
-</code>
-
-## MDNotes使用帮助
-
-- 默认文件目录为用户目录,可以配置修改该目录. 如果提供的目录路径错误或者没有权限,会恢复到该默认目录
-- 默认浏览器访问端口为8686. 修改端口后会重新打开MDNotes程序
-- 支持浏览的图片格式:png, jpg, jpeg,bmp,webp
-- 默认图片显示的最大宽度为500px,可以修改文件 `static\mdnotes.js` 中相应的语句修改图片显示宽度
-- Mathjax的行内公式请使用 `\\(公式\\)`, 不建议使用 $.更多信息可参考 <http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters>
-- 可以使用 MSI 安装包安装 MDNotes. MSI安装包基于zip免安装包中的文件制作.
-
-## 致谢: MDNotes 基于众多的开源软件构建.
-
-- axios
-- Babel
-- Bootstrap
-- BootstrapVue
-- Flask
-- Jinja
-- jQuery
-- MathJax
-- Popper
-- PortalVue
-- Prism
-- Python-Markdown
-- pyjson5
-- PySimpleGUIWx
-- Python
-- Vue.js
-- Waitress
-- WxPython
-- zico
-- zoom.js
-
