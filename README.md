@@ -7,6 +7,9 @@
 
 ## 功能列表
 
+- 绿色免安装
+- 支持浏览器内直接打开文件或文件夹进行编辑
+- 支持Markdown文件全文检索
 - 支持emoji表情: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
 - 支持Mermaid
 - 支持Mathjax
