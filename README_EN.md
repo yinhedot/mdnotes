@@ -1,19 +1,130 @@
-## About MDNotes
-Browse and manage Markdown files in the browser.
+- [English Doc](https://github.com/yinhedot/MDNotes/blob/main/README_EN.md)
+- [中文文档](https://github.com/yinhedot/MDNotes/blob/main/README.md)
 
-Version: 21.03.05
+## About MDNotes: Browse and manage Markdown files in the browser.
+Supported OS: windows 64-bit system
 
-Contact us:  yinhe@88.com
+## Function List
 
-## Help On MDNotes
+- emoji supported: [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+- Mermaid supported
+- Mathjax supported
+- Nested task list supported
+- Prism syntax highlighting supported
+- Image zoom supported
+- The webpage in the browser will re-rendered in real-time after the content of the Markdown file is updated (including the situation where the image of the file is updated in the same directory)
 
-- The default file directory is the user's home directory, which can be configured to other directory. If the provided directory path is wrong or has no user permission, it will - be restored to the default directory
-- The default browser access port is 8686. After modifying the port, the MDNotes program will be restared automatically
-- Supported image format for browsing: png, jpg, jpeg,bmp,webp
-- The default picture display max-width is 500px, you can modify the corresponding statement in the file `static/mdnotes.js` to Modify image display width
-- Please use `\\(formula\\)` to indicate Mathjax in-line formulas, $ is not recommended. For more infomation, please refer to  <http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters>
-- You can use the MSI installation package to install MDNotes. The MSI installation package is made based on the files in the zip file.
-- Credits: MDNotes is built on numerous open source software.
+## Examples
+
+### 1.Mermaid
+Markdown code, note that you need to use double quotes when using emoji expressions:
+
+```mermaid
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[":oncoming_police_car:Car"]
+```
+
+What's displayed:
+
+![](20210312mermaid1.png)
+
+Markdown code:
+
+```mermaid
+erDiagram
+          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+          CUSTOMER ||--o{ ORDER : places
+          CUSTOMER ||--o{ INVOICE : "liable for"
+          DELIVERY-ADDRESS ||--o{ ORDER : receives
+          INVOICE ||--|{ ORDER : covers
+          ORDER ||--|{ ORDER-ITEM : includes
+          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+```
+
+What's displayed:
+
+![](20210312mermaid2.png)
+
+
+Markdown code:
+
+```mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+```
+
+What's displayed:
+
+![](20210312mermaid3.png)
+
+More examples on mermaid: <https://mermaid-js.github.io/mermaid-live-editor/>
+
+### 2.Mathjax
+Please use `\\(formula\\)` to indicate Mathjax in-line formulas, $ is not recommended. For more infomation, please refer to  <http://docs.mathjax.org/en/latest/input/tex/delimiters.html#tex-delimiters>
+
+Markdown code:
+
+```markdown
+When \\(a \ne1 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are:
+
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+```
+
+What's displayed:
+
+![](20210312mathjax1.png)
+
+### 3. Nested task list
+Markdown code:
+
+```markdown
+- [x]  task1
+- [ ]  task2
+    - [x] task2.1
+    - [ ] task2.2
+    - [ ] task2.3
+        - [x] task2.3.1
+        - [ ] task2.3.2 
+```
+
+What's displayed:
+
+![](20210312taskList.png)
+
+### 4.Prism syntax highlighting
+Markdown code:
+
+```python
+import math
+# Assign values to x and n
+x = 4
+n = 3
+
+# Method 1
+power = x ** n
+print("%d to the power %d is %d" % (x,n,power))
+
+# Method 2
+power = pow(x,n)
+print("%d to the power %d is %d" % (x,n,power))
+
+# Method 3
+power = math.pow(2,6.5)
+print("%d to the power %d is %5.2f" % (x,n,power))
+```
+
+What's displayed:
+
+![](20210312prism.png)
+
 
 ## Credits: MDNotes is built on numerous open source software.
 
@@ -37,8 +148,6 @@ Contact us:  yinhe@88.com
 - WxPython
 - zico
 - zoom.js
-
-
 
 ## MDNotes Software License Terms:&emsp;LGPL-3.0 License
 
