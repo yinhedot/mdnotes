@@ -142,6 +142,7 @@ print("%d to the power %d is %5.2f" % (x,n,power))
 - Popper
 - PortalVue
 - Prism
+- PyMdown Extensions
 - Python-Markdown
 - pyjson5
 - PySimpleGUIWx
