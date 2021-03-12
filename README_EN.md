@@ -142,6 +142,7 @@ What's displayed:
 - Popper
 - PortalVue
 - Prism
+- PyMdown Extensions
 - Python-Markdown
 - pyjson5
 - PySimpleGUIWx
