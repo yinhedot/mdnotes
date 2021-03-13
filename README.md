@@ -129,31 +129,6 @@ print("%d to the power %d is %5.2f" % (x,n,power))
 
 ![](20210312prism.png)
 
-## 致谢: MDNotes 基于众多的开源软件构建.
-
-- axios
-- Babel
-- Bootstrap
-- BootstrapVue
-- Flask
-- Jinja
-- jQuery
-- MathJax
-- Popper
-- PortalVue
-- Prism
-- PyMdown Extensions
-- Python-Markdown
-- pyjson5
-- PySimpleGUIWx
-- Python
-- Vue.js
-- Waitress
-- WxPython
-- zico
-- zoom.js
-
-
 ## MDNotes Software License Terms:&emsp;LGPL-3.0 License
 
 <pre style="white-space: pre-wrap;word-wrap: break-word;">  GNU LESSER GENERAL PUBLIC LICENSE
