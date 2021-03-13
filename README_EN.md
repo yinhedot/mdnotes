@@ -128,31 +128,6 @@ What's displayed:
 
 ![](20210312prism.png)
 
-
-## Credits: MDNotes is built on numerous open source software.
-
-- axios
-- Babel
-- Bootstrap
-- BootstrapVue
-- Flask
-- Jinja
-- jQuery
-- MathJax
-- Popper
-- PortalVue
-- Prism
-- PyMdown Extensions
-- Python-Markdown
-- pyjson5
-- PySimpleGUIWx
-- Python
-- Vue.js
-- Waitress
-- WxPython
-- zico
-- zoom.js
-
 ## MDNotes Software License Terms:&emsp;LGPL-3.0 License
 
 <pre style="white-space: pre-wrap;word-wrap: break-word;">  GNU LESSER GENERAL PUBLIC LICENSE
