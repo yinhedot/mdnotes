@@ -17,6 +17,8 @@
 - 支持Prism语法高亮
 - 支持图片缩放
 - 支持Markdown文件内容更新(包括该文件同目录的图片更新)后,实时重新渲染浏览器内网页
+- 支持 [Font Awesome icon](https://fontawesome.com/)
+- 支持引入csv文件插入表格,语法同插入图片: `![](csvFileName.csv)`
 
 ## 示例
 
