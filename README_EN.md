@@ -16,6 +16,8 @@ Supported OS: windows 64-bit system
 - Prism syntax highlighting supported
 - Image zoom supported
 - The webpage in the browser will re-rendered in real-time after the content of the Markdown file is updated (including the situation where the image of the file is updated in the same directory)
+- [Font Awesome icon](https://fontawesome.com/) supported
+- Support importing csv files to insert markdown tables, the syntax is the same as importing pictures: `![](csvFileName.csv)`
 
 ## Examples
 
